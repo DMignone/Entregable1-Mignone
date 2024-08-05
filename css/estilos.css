@@ -1,0 +1,191 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.tarjeta-padre .tarjeta-nuevo {
+  position: absolute;
+  top: 0;
+  right: 3%;
+  background-color: rgba(252, 41, 41, 0.945);
+  color: rgb(238, 238, 129);
+  border: 2px solid rgb(238, 238, 129);
+  border-radius: 5%;
+}
+
+.form-control:focus, .search input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(149, 63, 112, 0.5333333333);
+  border: #953f70;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body a {
+  text-decoration: none;
+  color: #953f70;
+}
+
+.img-width {
+  width: 20% !important;
+}
+
+.img-centrado {
+  text-align: center;
+}
+.img-centrado .banner-tamaño {
+  width: 45%;
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 600;
+  padding: 2% 0%;
+}
+
+section h2 {
+  color: #953F70;
+}
+
+.tarjeta-padre {
+  position: relative;
+}
+.tarjeta-padre .tarjeta-nuevo {
+  text-align: center;
+  padding: 0;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 2ms;
+}
+.tarjeta-padre .tarjeta-nuevo:hover {
+  transform: scale(1.5);
+}
+.tarjeta-padre .tarjeta-nuevo p {
+  margin-bottom: 0;
+}
+
+header,
+footer {
+  background-color: #a69db4;
+}
+
+.icon {
+  color: black;
+}
+
+.header-grid {
+  padding: 0% 3%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "search logo login";
+  align-items: center;
+}
+
+.logo {
+  grid-area: logo;
+  padding: 1%;
+}
+.logo a {
+  display: flex;
+  justify-content: center;
+  align-items: inherit;
+  flex-wrap: inherit;
+}
+.logo a .logo-img {
+  width: 35%;
+  padding: 2px;
+}
+
+.search {
+  grid-area: search;
+}
+.search form {
+  display: flex;
+  justify-content: center;
+  align-items: inherit;
+  flex-wrap: inherit;
+}
+
+.login {
+  display: flex;
+  justify-content: inherit;
+  align-items: baseline;
+  flex-wrap: inherit;
+}
+
+.login p {
+  margin-right: 1%;
+}
+
+nav.navbar-tablet-mobile {
+  display: none;
+}
+
+nav.navbar-desktop {
+  display: block;
+}
+
+nav a .img-thumbnail {
+  max-width: 20%;
+}
+
+.nav-flex {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: inherit;
+  flex-wrap: wrap;
+}
+
+.nav-bar {
+  font-size: 105%;
+  padding: 1% 0%;
+}
+.nav-bar .nav li {
+  margin: 0% 3%;
+}
+.nav-bar .nav li a {
+  color: #953f70;
+}
+.nav-bar .nav li a:hover {
+  color: #f8f8ff;
+}
+
+.top-line {
+  border-top: 2px solid rgba(149, 63, 112, 0.3529411765);
+}
+
+.adjust-footer {
+  margin: 3% auto;
+}
+
+.color-whatsapp {
+  color: #34784e;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: small;
+  }
+  body a:active {
+    color: #f8f8ff;
+  }
+  nav.navbar-desktop {
+    display: none;
+  }
+  nav.navbar-tablet-mobile {
+    display: block;
+  }
+  #carouselSlidesOnly {
+    display: none;
+  }
+}
+.tarjeta-nuevo:active {
+  padding: 5px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

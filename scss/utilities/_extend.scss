@@ -1,0 +1,14 @@
+%tarjeta-nuevo {
+    position: absolute;
+    top: 0;
+    right: 3%;
+    background-color: $bg-nuevo;
+    color: $color-nuevo;
+    border: $borde-nuevo;
+    border-radius: 5%;
+}
+
+%input {
+    box-shadow: 0 0 0 0.25rem #953f7088;
+    border: $color-link;
+}

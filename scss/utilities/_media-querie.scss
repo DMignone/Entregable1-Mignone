@@ -1,0 +1,27 @@
+@media screen and (max-width: 768px) {
+    * {
+        font-size: small;
+    }
+
+    body {
+        a:active {
+            color: $color-hover-active;
+        }
+    }
+
+    nav.navbar-desktop {
+        display: none;
+    }
+
+    nav.navbar-tablet-mobile {
+        display: block;
+    }
+
+    #carouselSlidesOnly {
+        display: none;
+    }
+}
+
+.tarjeta-nuevo:active {
+    padding: 5px;
+}

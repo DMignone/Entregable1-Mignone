@@ -1,0 +1,66 @@
+//Links generales
+body {
+    a {
+        text-decoration: none;
+        color: $color-link;
+    }
+}
+
+.img-width {
+    width: 20% !important;
+}
+
+//Banners
+.img-centrado {
+    text-align: center;
+
+    .banner-tamaño {
+        width: 45%;
+        height: auto;
+    }
+}
+
+//Encabezados
+h1 {
+    text-align: center;
+    font-weight: 600;
+    padding: 2% 0%;
+}
+
+section h2 {
+    color: $color-h2;
+}
+
+
+//Tarjetas novedades
+.tarjeta-padre {
+    position: relative;
+
+    .tarjeta-nuevo {
+        @extend %tarjeta-nuevo;
+        text-align: center;
+        padding: 0;
+        transition-property: transform;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 2ms;
+
+        &:hover {
+            transform: scale(1.5);
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+//Colores fondo
+header,
+footer {
+    background-color: $fondo-header-footer;
+}
+
+.icon {
+    color: black;
+}

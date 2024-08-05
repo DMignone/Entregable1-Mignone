@@ -1,0 +1,84 @@
+.header-grid {
+    padding: 0% 3%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "search logo login";
+    align-items: center;
+}
+
+.logo {
+    grid-area: logo;
+    padding: 1%;
+
+    a {
+        @include flex(center, inherit, inherit);
+
+        .logo-img {
+            width: 35%;
+            padding: 2px;
+        }
+    }
+}
+
+.search {
+    grid-area: search;
+
+    input:focus {
+        @extend %input;
+    }
+}
+
+
+.search form {
+    @include flex(center, inherit, inherit);
+}
+
+.login {
+    @include flex(inherit, baseline, inherit);
+}
+
+.login p {
+    margin-right: 1%;
+}
+
+//NavBar
+nav.navbar-tablet-mobile {
+    display: none;
+}
+
+nav.navbar-desktop {
+    display: block;
+}
+
+nav a .img-thumbnail {
+    max-width: 20%;
+}
+
+.nav-flex {
+    list-style: none;
+    @include flex(center, inherit, wrap);
+}
+
+.nav-bar {
+    font-size: 105%;
+    padding: 1% 0%;
+
+    .nav {
+        li {
+            margin: 0% 3%;
+
+            a {
+                color: $color-link;
+
+                &:hover {
+                    color: $color-hover-active;
+                }
+            }
+        }
+    }
+}
+
+.top-line {
+    border-top: $border-top;
+}
