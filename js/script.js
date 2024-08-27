@@ -1,4 +1,4 @@
-const hiladosNaturales = [
+/* const hiladosNaturales = [
     { nombre: "Mecha Pura Lana" },
     { nombre: "Corderito" },
     { nombre: "Cordón Premium" },
@@ -42,7 +42,47 @@ function bienvenidaComprador() {
     }
 }
 
-bienvenidaComprador();
+bienvenidaComprador(); */
 
+//Acá arranca el código que estuve viendo con vos de la preentrega 2, pero lo comento para no modificar todavía el código anterior, por las dudas
 
+const arrayHilados = [
+    {
+        nombre: 'algodon',
+        material: 'natural',
+        color: 'azul',
+    },
+    {
+        nombre: 'yute',
+        material: 'natural',
+        color: 'tostado',
+    },
+    {
+        nombre: 'cashmilon',
+        material: 'sintético',
+        color: 'rojo',
+    },
+    {
+        nombre: 'mecha sedificada',
+        material: 'sintético',
+        color: 'verde',
+    },
+];
 
+function filtrarHilados() {
+    let confirmacion = confirm('¿Desea realizar una búsqueda?');
+    while (confirmacion) {
+        let busqueda = prompt('¿Qué desea buscar? Por favor, ingrese su búsqueda sin tildes, ej:"algodon".');
+
+        if (busqueda === null || busqueda === '') {
+            alert('Ups! Parece que hubo un problema. Por favor, vuelva a ingresar su búsqueda.')
+        } else {
+            const resultadoNombre = arrayHilados.filter((hilo) => hilo.nombre.includes(busqueda));
+            return console.log(resultadoNombre);
+        }
+
+        confirmacion = confirm('¿Desea realizar otra búsqueda?');
+    }
+}
+
+filtrarHilados();
